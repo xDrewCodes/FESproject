@@ -79,3 +79,11 @@ li {
     list-style-type: none;
     padding-left: 16px;
 }
+
+.row {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
