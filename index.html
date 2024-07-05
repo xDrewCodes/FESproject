@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <section>
         <nav>
@@ -22,56 +26,77 @@
 
         <header>
             <div class="row">
-            <div>
-                <h1>Best place to learn frontend</h1>
-                <p class="subheader">Go from being an absolute beginner to pro with a simplified process</p>
-                <button>Start Now</button>
+                <div>
+                    <h1>Best place to learn frontend</h1>
+                    <p class="subheader">Go from being an absolute beginner to pro with a simplified process</p>
+                    <button>Start Now</button>
+                </div>
+                <figure>
+                    <img src="./assets/laptop.png" alt="">
+                </figure>
             </div>
-            <figure>
-                <img src="./assets/laptop.png" alt="">
-            </figure>
-        </div>
         </header>
     </section>
 
     <main>
         <section id="about">
             <h2>About</h2>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae impedit unde modi exercitationem doloremque dolorem, non placeat quibusdam fugit optio laudantium asperiores quia rem, facilis repellat corporis quaerat aut! Reprehenderit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius hic necessitatibus at laboriosam cumque accusamus voluptates eveniet, vitae voluptatum, optio tempora, quas fuga facere nemo mollitia est aut sit illum?</p>
+            <div class='section__description'>
+                <div class='section__description--wrapper'>
+                    <p class="section__description--para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Recusandae impedit unde modi
+                        exercitationem doloremque dolorem, non placeat quibusdam fugit optio laudantium asperiores quia
+                        rem, facilis repellat corporis quaerat aut! Reprehenderit.</p>
+                    <p class="section__description--para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                        hic necessitatibus at laboriosam
+                        cumque accusamus voluptates eveniet, vitae voluptatum, optio tempora, quas fuga facere nemo
+                        mollitia est aut sit illum?</p>
+                </div>
+                <figure class="about__img--wrapper">
+                    <img src="./assets/about.jpg" alt="">
+                </figure>
             </div>
         </section>
         <section id="discord">
             <h2>Discord</h2>
-            <figure>
-                <img src="./assets/discord.png" alt="">
-            </figure>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui et maiores voluptas nihil ipsum molestias omnis expedita accusamus in minus, consequatur, est inventore assumenda vel. Dolorem doloribus delectus ipsam.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut tempore voluptates dolorem accusamus repellendus vitae quidem ex minima, sapiente ducimus.</p>
+            <div class="section__description">
+                <figure>
+                    <img src="./assets/discord.png" alt="">
+                </figure class="about__img--wrapper">
+                <div class='section__description--wrapper'>
+                    <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                        qui et maiores voluptas nihil ipsum
+                        molestias omnis expedita accusamus in minus, consequatur, est inventore assumenda vel. Dolorem
+                        doloribus delectus ipsam.</p>
+                    <p class="section__description--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+                        tempore voluptates dolorem accusamus
+                        repellendus vitae quidem ex minima, sapiente ducimus.</p>
+                </div>
             </div>
         </section>
         <section id="contact">
             <h2>Contact</h2>
             <form action="">
                 <label for="input">Email</label>
-                <input type="text" placeholder="john@example.com">
+                <input type="email" placeholder="john@example.com">
                 <label for="textarea">Message</label>
                 <textarea type="text" placeholder="Hello! Great stuff."></textarea>
+                <button style="margin-bottom: 24px;">Contact Us!</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <img src="./assets/FES.svg" alt="">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-            <a href="">Courses</a>
+        <img class="footer__logo" src="./assets/FES.svg" alt="">
+        <div class="footer__links">
+            <a class="footer__link" href="#about">About</a>
+            <a class="footer__link" href="#discord">Discord</a>
+            <a class="footer__link" href="#contact">Contact</a>
+            <a class="footer__link" href="">Courses</a>
         </div>
+        <p>Copyright Frontend Simplified</p>
     </footer>
 
 </body>
+
 </html>
